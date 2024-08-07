@@ -85,7 +85,7 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
 </script>
 
 <template>
-  <div title="Change Theme" class="dropdown dropdown-end">
+  <div title="Change Theme" class="dropdown dropdown-end z-99990">
     <div tabindex="0" class="gap-1 normal-case btn btn-ghost">
       <UnoCSSIconButton icon="i-tabler-color-swatch" />
       <span class="hidden md:inline">{{ t("Themes") }}</span>

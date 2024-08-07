@@ -1,10 +1,8 @@
 <script setup lang="ts">
 const router = useRouter();
 
-function testStore() {
-  router.push({
-    name: "StoreTest",
-  });
+function goExplore() {
+  router.push('/explore');
 }
 </script>
 
@@ -16,14 +14,14 @@ function testStore() {
     />
     <div class="text-center hero-content">
       <div class="max-w-md">
-        <h1 class="mb-5 text-5xl font-bold">
-          Boot Vue
+        <h1 class="mb-5 text-4xl font-bold">
+            站在巨人的肩膀上开发
         </h1>
         <p class="mb-5">
-          Mocking up web app with Boot Vue <sup>(speed)</sup>
+          快速选择<em>技术栈和版本合适的</em>开源免费仓库
         </p>
-        <button class="btn btn-primary" @click="testStore">
-          Test Store
+        <button class="btn btn-primary" @click="goExplore">
+        开始独立开发
         </button>
       </div>
     </div>
