@@ -14,7 +14,7 @@ export default defineConfig({
             scale: 1.5,
         }),
         // presetDaisy({
-        //   themes: true,
+        //     themes: ['black'],
         // }),
     ],
     transformers: [

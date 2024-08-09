@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-
+import { sleep } from '~/utils/common';
+import { Repos } from './repos';
 const AppTypes = [
     {
         name: 'Web',
@@ -38,9 +39,16 @@ const AppTypes = [
     },
 ]
 
+const repoList = ref<any[]>([null])
 const curAppId = ref(AppTypes[0].id)
 
-onMounted( () => {
+const curRepos = computed(() => {
+    return repoList.value.filter(item => item === null || item.tags.includes(curAppId.value))
+})
+
+onMounted( async () => {
+    await sleep(2000);
+    repoList.value = Repos
 })
 </script>
 <template>
@@ -53,9 +61,9 @@ onMounted( () => {
             </ul>
         </div>
         <div class="app-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4" >
-            <template v-for="item in 20">
+            <template v-for="item in curRepos">
                 <div class="repo-wrap">
-                    <RepoCard :repo-info="{ id: item,}"></RepoCard>
+                    <RepoCard :repo-info="item"></RepoCard>
                 </div>
             </template>
         

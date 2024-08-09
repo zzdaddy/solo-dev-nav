@@ -92,7 +92,7 @@ function changeTheme(event: MouseEvent, theme: CustomTheme) {
       <UnoCSSIconButton icon="i-tabler-chevron-down" />
     </div>
     <div
-      class="dropdown-content scrollbar top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl rounded-t-box rounded-b-box"
+      class="dropdown-content z-99999 scrollbar top-px mt-16 h-[70vh] max-h-96 w-52 overflow-y-auto bg-base-200 text-base-content shadow-2xl rounded-t-box rounded-b-box"
     >
       <div class="grid grid-cols-1 gap-3 p-3" tabindex="0">
         <div

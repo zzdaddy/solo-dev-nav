@@ -8,7 +8,9 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppCard: typeof import('./../src/components/RepoCard/AppCard.vue')['default']
+    RepoActive: typeof import('./../src/components/RepoCard/RepoActive.vue')['default']
     RepoCard: typeof import('./../src/components/RepoCard/RepoCard.vue')['default']
+    RepoInfoDrawer: typeof import('./../src/components/RepoCard/RepoInfoDrawer.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     UnoCSSIconButton: typeof import('./../src/components/Icon/UnoCSSIconButton.vue')['default']

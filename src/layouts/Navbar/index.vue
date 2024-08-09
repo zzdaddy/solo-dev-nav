@@ -31,7 +31,7 @@ const routeTo = (path: string) => {
                         <a>探索</a>
                     </li>
                 </ul>
-                <ThemeChange />
+                <!-- <ThemeChange /> -->
         <!-- <LocalesChange /> -->
                 <!-- <span class="tooltip tooltip-bottom before:text-xs before:content-[attr(data-tip)]" data-tip="GitHub">
                     <span class="flex-none items-center">
